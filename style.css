@@ -1,0 +1,199 @@
+.navigation{
+    padding:1%;
+    overflow:hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    text-align: center;
+}
+.navigation a{
+    float:left;
+    color:white;
+    padding-right: 2%;
+    text-decoration: none;
+}
+.navigation input[type=search] {
+    margin-right:5%;
+    float:left;
+    background-color: grey;
+    color:white;
+} 
+::placeholder{
+    color: white;
+}
+.navigation img{
+    padding-right:5%;
+    float: left;
+    width: 2%;
+}
+.navigation .icon{
+    display: hidden;
+    visibility: hidden;
+}
+@media screen and (max-width:768px){
+    .navigation .responsive{
+        position: relative;
+    }
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+        float: right;
+        display: block;
+        visibility: visible;
+      }
+    .navigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation input[type="search"]{
+        display: none;
+    }
+    .navigation img{
+        width:5%;
+    }
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+    opacity: 1;
+}
+
+.intro {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.52);
+    opacity: 90%;
+    width:100%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+.highlight{
+    color: white;
+    opacity: 1;
+}
+.form-container{
+    float: left;
+    padding: 2%;
+    width:40%;
+    padding-left: 5%;
+}
+
+.form-inner-container{
+    background-color: white;
+    color: black;
+    width: 50%;
+    text-align: center;
+    padding: 5%;
+    float: left;
+}
+
+.description {
+    float:left;
+    color: inherit;
+    background-color: inherit;
+    width:50%;
+    padding-top: 1%;
+}
+
+form ::placeholder{
+    color: black;
+}
+
+.form-inner-container label{
+    text-align: right;
+}
+
+.description-inner{
+    width:70%;
+    float: right;
+}
+
+.form-container input[type=submit]
+{
+    background-color: green;
+}
+.form-container input[type="text"], .form-container input[type="email"], .form-container input[type="password"],.form-container input[type="submit"]{
+    width: 100%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .column.side {
+    width: 25%;
+  }
+  
+  .column.middle {
+    width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width:768px){
+    .description{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .form-container{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .description-inner{
+        float:none;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .form-inner-container{
+        float: none;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .form-container{
+        display:none;
+    }
+    .description-inner{
+        width:80%;
+    }
+    .heading{
+        font-size: 2.5em;
+    }
+    
+}
+
+.disclaimer{
+    font-size: 0.7em;
+    word-wrap:break-word;
+}
+
+.signup{
+    text-align: center;
+    padding: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.signup-inner{
+    width:100%;
+}
+
+.signup .btn{
+    background-color: white;
+    border:1px solid grey;
+    color:dodgerblue;
+    font-weight: bold;
+    padding: 2%;
+}
